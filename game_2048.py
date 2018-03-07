@@ -70,7 +70,7 @@ class Game_2048:
                 break
 
     def move_up(self, length, x):
-        # 将上下大于0的数据填充到列表中
+        """将上下大于0的数据填充到列表中"""
         l_real_num = []
         for y in range(length):
             if self.data[y][x] > 0:
@@ -95,7 +95,7 @@ class Game_2048:
                 break
 
     def move_left(self, length, x):
-        # 将左右大于0的数据填充到列表中
+        """将左右大于0的数据填充到列表中"""
         l_real_num = []
         for y in range(length):
             if self.data[x][y] > 0:
@@ -120,7 +120,7 @@ class Game_2048:
                 break
 
     def move_right(self, length, x):
-        # 将左右大于0的数据填充到列表中
+        """将左右大于0的数据填充到列表中"""
         l_real_num = []
         for y in range(length - 1, -1, -1):
             if self.data[x][y] > 0:
