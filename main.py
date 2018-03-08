@@ -27,5 +27,6 @@ def play_game():
     print('游戏结束，得分为:%d' % score)
 
 
+# 调用总入口
 if __name__ == '__main__':
     play_game()
